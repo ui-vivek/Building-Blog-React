@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <>
-      <ul className="nav justify-content-center">
+    <nav>
+      <ul style={{backgroundColor: 'gray' }} className="nav justify-content-center">
         <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/">
             Home
@@ -21,6 +21,6 @@ export default function Header() {
         </li>
  
       </ul>
-    </>
+    </nav>
   );
 }
