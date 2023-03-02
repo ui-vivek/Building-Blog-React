@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <nav>
-      <ul style={{backgroundColor: 'gray' }} className="nav justify-content-center">
+      <ul
+        style={{ backgroundColor: "gray" }}
+        className="nav justify-content-center"
+      >
         <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/">
             Home
@@ -19,7 +22,6 @@ export default function Header() {
             Contact
           </NavLink>
         </li>
- 
       </ul>
     </nav>
   );
