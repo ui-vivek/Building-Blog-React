@@ -1,13 +1,10 @@
-import './App.css';
+import React from 'react'
 
-function App() {
+export default function App() {
   return (
     <>
-    
+    <h1>{process.env.REACT_APP_test}</h1>
     </>
-
-      
-  );
+  )
 }
 
-export default App;
