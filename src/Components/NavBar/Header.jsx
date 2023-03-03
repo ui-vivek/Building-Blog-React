@@ -13,13 +13,13 @@ export default function Header() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/about">
-            About
+          <NavLink className="nav-link" to="/createPost">
+          Create Post
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/contact">
-            Contact
+          <NavLink className="nav-link" to="/about">
+            About
           </NavLink>
         </li>
       </ul>
