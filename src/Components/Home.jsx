@@ -37,7 +37,10 @@ function Home() {
       <div>
         {posts.map((post,index)=>(
             <div className="post" key={`post-${index}`}>
+              <Link to={`/post/${post.id}`}>
               <h3>{post.title}</h3>
+              <p>{post.subtitle}</p>
+              </Link>
           </div>
         ))}
       </div>

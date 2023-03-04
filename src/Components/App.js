@@ -6,6 +6,7 @@ import CreatePost from "./CreatePost";
 import Home from "./Home";
 import About from "./About";
 import Error from "./Error";
+import PostDetail from "./PostDetail";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/createPost" element={<CreatePost />} />
+        <Route path="/post/:postId" element={<PostDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>

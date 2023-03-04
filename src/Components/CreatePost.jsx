@@ -10,9 +10,9 @@ export default function About() {
 
   const printData = (e) => {
     e.preventDefault(); // this is used to prevent form reloding the page
-    console.log("Title", title);
-    console.log("SubTitle", subtitle);
-    console.log("Post", post);
+    // console.log("Title", title);
+    // console.log("SubTitle", subtitle);
+    // console.log("Post", post);
     handleSubmit({
       title,
       subtitle,
