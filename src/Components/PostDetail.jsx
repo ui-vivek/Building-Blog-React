@@ -1,3 +1,4 @@
+import './PostDetail.css'
 import React, { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { firestore } from "../Firebase/firebase";
@@ -13,7 +14,7 @@ export default function PostDetail() {
       .doc(postId)
       .get()
       .then((snapshot) => {
-        console.log("snapshot",snapshot.data());
+        // console.log("snapshot",snapshot.data());
         setPost(snapshot.data())
       });
   }, [postId]);
@@ -21,9 +22,10 @@ export default function PostDetail() {
   return (
     <>
     <Header/>
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.post}</p>
+    <div className="container postdetails fade-in">
+      <h1 className="m-4 text-center"><u>{post.title}</u></h1>
+      <small>[ Post created at : {post.createAt} ]</small>
+      <p className='mt-2'>{post.post}</p>
     </div>
     </>
   )

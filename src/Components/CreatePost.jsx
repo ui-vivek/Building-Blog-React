@@ -17,7 +17,7 @@ export default function About() {
       title,
       subtitle,
       post,
-      createAt : new Date()
+      createAt : new Date().toLocaleString()
     })
   };
   const navigate = useNavigate();
