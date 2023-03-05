@@ -4,7 +4,7 @@
    
   </head>
   <body>
-    <h1>Project Name</h1>
+    <h1>Blog WebSite</h1>
     <p>This project is a real-time web application that utilizes Firebase's Realtime Database to create a dynamic user interface. The application is built using React Router v6 for client-side routing, and Bootstrap for front-end styling. The useState and useEffect hooks are used for state management and event handling, while useParams is used to extract parameters from the URL. Additionally, preventDefault is used to stop the default action of form submissions.</p>
     <p>Live URL: <a href="https://viveksingh.tech">viveksingh.tech</a></p>
     <h2>Installation</h2>

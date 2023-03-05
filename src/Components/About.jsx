@@ -21,7 +21,7 @@ export default function Contact() {
         </p>
         <h2>Installation</h2>
         <ol>
-          <li>Clone the repository to your local machine.</li>
+          <li>Clone the repository to your local machine. ( <code>https://github.com/ui-vivek/Building-Blog-React.git</code> ) </li>
           <li>Navigate to the project directory.</li>
           <li>
             Run <code>npm install</code> to install the dependencies.
