@@ -1,6 +1,6 @@
-import './PostDetail.css'
-import React, { useState,useEffect } from "react";
-import { useParams } from "react-router-dom";
+import "./PostDetail.css";
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import { firestore } from "../Firebase/firebase";
 import Header from "./NavBar/Header";
 
@@ -10,23 +10,30 @@ export default function PostDetail() {
 
   useEffect(() => {
     firestore
-      .collection('posts')
-      .doc(postId)
-      .get()
-      .then((snapshot) => {
-        // console.log("snapshot",snapshot.data());
-        setPost(snapshot.data())
-      });
+    .collection("posts")
+    .doc(postId)
+    .get()
+    .then((snapshot) => {
+      // console.log("snapshot",snapshot.data());
+      setPost(snapshot.data());
+    });
   }, [postId]);
 
   return (
     <>
-    <Header/>
-    <div className="container postdetails fade-in">
-      <h1 className="m-4 text-center"><u>{post.title}</u></h1>
-      <small>[ Post created at : {post.createAt} ]</small>
-      <p className='mt-2'>{post.post}</p>
-    </div>
+      <Header />
+      <div id="postdetails" className="container mt-4 fade-in">
+        <span className="position">
+          <Link to={'/'} >
+            <i class="bx bx-x bx-md"></i>
+          </Link>
+        </span>
+        <h1 className="mb-2 text-center">
+          <u>{post.title}</u>
+        </h1>
+        <small className="mb-2 px-4">[ Post created at : {post.createAt} ]</small>
+        <p className="mt-3 px-4">{post.post}</p>
+      </div>
     </>
-  )
+  );
 }

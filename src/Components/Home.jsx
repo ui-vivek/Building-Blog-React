@@ -2,6 +2,7 @@ import { useEffect ,useState} from "react";
 import {useNavigate,Link } from "react-router-dom";
 import Header from "./NavBar/Header";
 import { firestore } from "../Firebase/firebase";
+import './Home.css'
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -31,15 +32,14 @@ function Home() {
   return (
     <>
       <Header />
-      <p>Home Page</p>
       <button onClick={goToCreatePost}>Go to Create Post</button>
-      <h1>Tech Blog</h1>
-      <div>
+      <h1 className="text-center">Tech Blog</h1>
+      <div className="container fade-in">
         {posts.map((post,index)=>(
-            <div className="post" key={`post-${index}`}>
-              <Link to={`/post/${post.id}`}>
-              <h3>{post.title}</h3>
-              <p>{post.subtitle}</p>
+            <div className="m-1 p-2 post-box fade-in" key={`post-${index}`}>
+              <Link className="link" to={`/post/${post.id}`}>
+              <h3 className="mx-4">{post.title}</h3>
+              <p className="mx-4 mb-0 text-muted">{post.subtitle}</p>
               </Link>
           </div>
         ))}

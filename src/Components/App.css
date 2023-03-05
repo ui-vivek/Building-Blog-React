@@ -4,3 +4,6 @@
 .active {
   color: yellow;
 }
+.link {
+  text-decoration: none;
+}
