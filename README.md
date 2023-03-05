@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project Name</title>
+   
   </head>
   <body>
     <h1>Project Name</h1>
@@ -17,11 +17,31 @@
     </ol>
     <h2>Features</h2>
     <ul>
-      <li>A real-time user interface that allows users to view and manipulate data stored in the Firebase Realtime Database.</li>
-      <li>Client-side routing using React Router v6, with dynamic routes implemented using the useParams hook.</li>
-      <li>Front-end styling using Bootstrap, with responsive design for a seamless user experience on all devices.</li>
-      <li>State management and event handling using the useState and useEffect hooks in React.</li>
-      <li>Form submissions are handled using the preventDefault method to prevent the default action.</li>
+      <li>
+            Developed a dynamic and responsive Front-End web application using
+            React and Firebase's Realtime Database to create, store and retrieve
+            user-generated posts in real-time.
+          </li>
+          <li>
+            Implemented client-side routing using the latest version of React
+            Router, v6, to ensure a seamless and smooth navigation experience
+            for users.
+          </li>
+          <li>
+            Designed an intuitive and visually-appealing user interface with
+            Bootstrap, ensuring cross-device compatibility and optimal user
+            experience on all devices.
+          </li>
+          <li>
+            Efficiently managed state and events using React hooks such as
+            useState and useEffect, making the application fast and lightweight
+            while maintaining optimal performance.
+          </li>
+          <li>
+            Implemented advanced user input validation and form submission
+            handling using the preventDefault method, ensuring the highest level
+            of security and data integrity for users.
+          </li>
     </ul>
     <h2>Contributing</h2>
     <p>Contributions are welcome and encouraged! To contribute, please follow these steps:</p>

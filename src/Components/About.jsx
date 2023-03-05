@@ -14,7 +14,7 @@ export default function Contact() {
           useState and useEffect hooks are used for state management and event
           handling, while the useParams hook is used to extract parameters from
           the URL. The preventDefault method is used to handle form submissions.
-          The live version of the project is available at 
+          The live version of the project is available at
         </p>
         <p>
           Live URL: <a href="https://viveksingh.tech">viveksingh.tech</a>
@@ -37,24 +37,29 @@ export default function Contact() {
         <h2>Features</h2>
         <ul>
           <li>
-            A real-time user interface that allows users to view and manipulate
-            data stored in the Firebase Realtime Database.
+            Developed a dynamic and responsive Front-End web application using
+            React and Firebase's Realtime Database to create, store and retrieve
+            user-generated posts in real-time.
           </li>
           <li>
-            Client-side routing using React Router v6, with dynamic routes
-            implemented using the useParams hook.
+            Implemented client-side routing using the latest version of React
+            Router, v6, to ensure a seamless and smooth navigation experience
+            for users.
           </li>
           <li>
-            Front-end styling using Bootstrap, with responsive design for a
-            seamless user experience on all devices.
+            Designed an intuitive and visually-appealing user interface with
+            Bootstrap, ensuring cross-device compatibility and optimal user
+            experience on all devices.
           </li>
           <li>
-            State management and event handling using the useState and useEffect
-            hooks in React.
+            Efficiently managed state and events using React hooks such as
+            useState and useEffect, making the application fast and lightweight
+            while maintaining optimal performance.
           </li>
           <li>
-            Form submissions are handled using the preventDefault method to
-            prevent the default action.
+            Implemented advanced user input validation and form submission
+            handling using the preventDefault method, ensuring the highest level
+            of security and data integrity for users.
           </li>
         </ul>
         <h2>Contributing</h2>
