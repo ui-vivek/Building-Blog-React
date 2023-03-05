@@ -17,7 +17,7 @@ export default function Contact() {
           The live version of the project is available at
         </p>
         <p>
-          Live URL: <a href="https://viveksingh.tech">viveksingh.tech</a>
+          Live URL: <a href="https://create-blog.netlify.app/">viveksingh.tech</a>
         </p>
         <h2>Installation</h2>
         <ol>
