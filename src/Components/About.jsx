@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <Header />
       <div className="container">
-        <h1>Blog WebSite</h1>
+        <h1>FirePost</h1>
         <p>
           The project is a web application that allows users to create and view
           posts. Posts are stored in Firebase's Realtime Database, allowing for
@@ -17,11 +17,32 @@ export default function Contact() {
           The live version of the project is available at
         </p>
         <p>
-          Live URL: <a href="https://create-blog.netlify.app/">viveksingh.tech</a>
+          Live URL:{" "}
+          <a href="https://firepost.netlify.app/">
+            https://firepost.netlify.app/
+          </a>
         </p>
+        <h5>Why FirePost</h5>
+        <p>
+          Choosing the name FirePost for my website could imply a sense of speed
+          and efficiency, as well as the ability to quickly and easily share
+          information or content. The name "fire" could also be associated with
+          passion, excitement, and intensity, which could be appealing if my
+          website is geared towards a specific niche or audience.
+          <br />
+          Additionally, the word "post" could suggest a platform or forum for
+          sharing ideas or content, which aligns with the purpose of many
+          websites. Overall, FirePost has the potential to be a memorable and
+          impactful name for my website, and could help you establish a strong
+          brand identity.
+        </p>
+        <hr />
         <h2>Installation</h2>
         <ol>
-          <li>Clone the repository to your local machine. ( <code>https://github.com/ui-vivek/Building-Blog-React.git</code> ) </li>
+          <li>
+            Clone the repository to your local machine. ({" "}
+            <code>https://github.com/ui-vivek/Building-Blog-React.git</code> ){" "}
+          </li>
           <li>Navigate to the project directory.</li>
           <li>
             Run <code>npm install</code> to install the dependencies.
@@ -34,6 +55,7 @@ export default function Contact() {
             application.
           </li>
         </ol>
+        <hr />
         <h2>Features</h2>
         <ul>
           <li>
@@ -62,6 +84,7 @@ export default function Contact() {
             of security and data integrity for users.
           </li>
         </ul>
+        <hr />
         <h2>Contributing</h2>
         <p>
           Contributions are welcome and encouraged! To contribute, please follow
@@ -75,6 +98,7 @@ export default function Contact() {
           </li>
           <li>Submit a pull request to the main repository.</li>
         </ol>
+        <hr />
         <h2>License</h2>
         <p>
           This project is licensed under the MIT License. See{" "}

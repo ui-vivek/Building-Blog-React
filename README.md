@@ -4,9 +4,22 @@
    
   </head>
   <body>
-    <h1>Blog WebSite</h1>
+    <h1>FirePost</h1>
     <p>This project is a real-time web application that utilizes Firebase's Realtime Database to create a dynamic user interface. The application is built using React Router v6 for client-side routing, and Bootstrap for front-end styling. The useState and useEffect hooks are used for state management and event handling, while useParams is used to extract parameters from the URL. Additionally, preventDefault is used to stop the default action of form submissions.</p>
-    <p>Live URL: <a href="https://create-blog.netlify.app/">https://create-blog.netlify.app/</a></p>
+    <p>Live URL: <a href="https://firepost.netlify.app/">https://firepost.netlify.app/</a></p>
+    <p>
+      Choosing the name FirePost for my website could imply a sense of
+      speed and efficiency, as well as the ability to quickly and easily
+      share information or content. The name "fire" could also be associated
+      with passion, excitement, and intensity, which could be appealing if
+      my website is geared towards a specific niche or audience.
+      <br/>
+      Additionally, the word "post" could suggest a platform or forum for
+      sharing ideas or content, which aligns with the purpose of many
+      websites. Overall, FirePost has the potential to be a memorable and
+      impactful name for my website, and could help you establish a strong
+      brand identity.
+    </p>
     <h2>Installation</h2>
     <ol>
       <li>Clone the repository to your local machine.</li>
