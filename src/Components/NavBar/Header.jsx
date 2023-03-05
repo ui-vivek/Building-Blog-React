@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <nav className="sticky-top">
       <ul
-        style={{ backgroundColor: "gray" }}
+        style={{ backgroundColor: "darkred" }}
         className="nav justify-content-center"
       >
         <li className="nav-item">

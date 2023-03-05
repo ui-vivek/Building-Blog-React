@@ -48,7 +48,7 @@ export default function About() {
       <div
         style={{ display: "none" }}
         id="alertMsg"
-        class="alert alert-dismissible alert-primary"
+        className="alert alert-dismissible alert-primary"
         role="alert"
       >
         <div className="text-center">Post created and published 😇👍.</div>
