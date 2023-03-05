@@ -28,10 +28,10 @@ export default function PostDetail() {
             <i class="bx bx-x bx-md"></i>
           </Link>
         </span>
-        <h1 className="mb-2 text-center">
+        <h1 className="mb-2 text-center text-primary">
           <u>{post.title}</u>
         </h1>
-        <small className="mb-2 px-4">[ Post created at : {post.createAt} ]</small>
+        <small className="mb-2 px-4 text-info">[ Post created at : {post.createAt} ]</small>
         <p className="mt-3 px-4">{post.post}</p>
       </div>
     </>

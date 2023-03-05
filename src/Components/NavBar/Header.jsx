@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav>
+    <nav className="sticky-top">
       <ul
         style={{ backgroundColor: "gray" }}
         className="nav justify-content-center"
