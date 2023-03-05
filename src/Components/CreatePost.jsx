@@ -9,7 +9,7 @@ export default function About() {
   const [subtitle, setSubitle] = useState();
   const [post, setPost] = useState();
 
-  const printData = (e) => {
+  const submitForm = (e) => {
     e.preventDefault(); // this is used to prevent form reloding the page
     // console.log("Title", title);
     // console.log("SubTitle", subtitle);
@@ -19,23 +19,49 @@ export default function About() {
       subtitle,
       post,
       createAt: new Date().toLocaleString(),
+      time: new Date(),
     });
+
+    setTitle("");
+    setSubitle("");
+    setPost("");
+    callAlert();
   };
   // const goto = () => {
   //   navigate("/");
   // };
+  
+  //This function is use to show the Alert after post created
+  const callAlert = () => {
+    const divv = document.getElementById("alertMsg");
+    divv.style.display = "block";
+    setTimeout(() => {
+      divv.style.display = "none";
+    }, 2000);
+  };
+
   return (
     <>
       <Header />
+      {/* The below button to go any other page using useNavigate Hook */}
       {/* <button onClick={goto}>Go to Home</button> */}
+      <div
+        style={{ display: "none" }}
+        id="alertMsg"
+        class="alert alert-dismissible alert-primary"
+        role="alert"
+      >
+        <div className="text-center">Post created and published 😇👍.</div>
+      </div>
       <div className="container mt-5">
-        <form onSubmit={printData} className="">
+        <form onSubmit={submitForm} className="">
           <div className="mb-3">
             <label for="exampleFormControlInput1" className="form-label">
               Title
             </label>
             <input
               required
+              value={title}
               type="text"
               className="form-control"
               onChange={(e) => {
@@ -49,6 +75,7 @@ export default function About() {
             </label>
             <input
               required
+              value={subtitle}
               type="text"
               className="form-control"
               onChange={(e) => {
@@ -62,6 +89,7 @@ export default function About() {
             </label>
             <textarea
               required
+              value={post}
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"

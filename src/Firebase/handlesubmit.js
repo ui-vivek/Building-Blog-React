@@ -6,7 +6,8 @@ const handleSubmit = (data) => {
     title:data.title,
     subtitle:data.subtitle,
     post:data.post,
-    createAt : data.createAt
+    createAt : data.createAt,
+    time:data.time
   };
   try {
     addDoc(ref, Data);

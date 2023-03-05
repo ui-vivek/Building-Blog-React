@@ -12,6 +12,6 @@ code {
     monospace;
 }
 ::selection {
-  background-color: red;
+  background-color: darkred;
   color: yellow;
 }
